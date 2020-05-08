@@ -1,7 +1,10 @@
-export default{
-    created(){
-        sayHi(){
-            console.log("Hello!")
+export default {
+    data(){
+        return{
+            message:"ABC",
         }
+    },
+    created() {
+        console.log("Hello!");
     }
 }

@@ -20,10 +20,10 @@ vue --version
 ```
 vue create 專案名稱
 ```
-create的過程中會詢問要安裝`default`還是`手動選擇要的檔案`，這個就看個人吧  
+create的過程中會詢問要安裝`default`還是`手動選擇要的檔案`，這個就看個人吧。
 
-完成後就可以run看看是否成功了
+完成後就可以run看看是否成功了。
 ```
 npm run serve
 ```
-打開瀏覽器輸入`http://localhost:8080`就可以看到大大的Vue Logo
+打開瀏覽器輸入`http://localhost:8080`就可以看到大大的Vue Logo。
