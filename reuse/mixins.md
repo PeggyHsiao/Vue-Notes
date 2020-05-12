@@ -5,8 +5,7 @@
 
 當組件選項內的名稱和mixins檔案名稱重覆時，會以**當前組件**的值覆蓋mixins的！  
 
-## 範例
-### 在vue-cli使用mixins
+## 區域Mixins
 有些組件載入時要顯示"Hello!"的訊息，因此建立一個`mixins`資料夾，裡面新增`commomMixins.js`檔案存放此功能。  
 ```
 // commonMixins.js
@@ -35,7 +34,7 @@ export default {
 ```
 這樣瀏覽器只要有使用到MixinsTest的組件，就會顯示"Hello!"的字樣。  
 
-### mixins和組件名稱衝突
+## mixins和組件名稱衝突
 兩個檔案data中皆有message的屬性，因此在合併的時候會以組件的`message:'abc'`為主。
 ```
 // commonMixins.js
@@ -66,3 +65,6 @@ export default {
 </script>
 ```
 輸出結果為object，其內容為{ message: 'abc',  value:'123' }。
+
+## 全域Mixins
+幾乎全部組件都會使用到的功能，可以選擇在`plugins/index.js`定義為global mixins，此時組件不再需要寫`mixins:[]`和`import`引入.js檔，但是**Global Mixins會影響到所有組件，使用前請三思**。

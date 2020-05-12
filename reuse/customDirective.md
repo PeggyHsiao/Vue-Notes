@@ -1,10 +1,11 @@
 # 自定義指令 (Coustom Direactive)
 在Vue裡面有許多內建指令(v-bind、v-model、v-if...)，使用者也可以自行新增指令來完成對DOM元素的操作，其中有分為**全域自定義指令**和**區域自定義指令**。  
 
-現在要新增一個`v-focus`的全域指令，功用是開啟網頁時游標會自動停在`<input>`上。在`main.js`檔案中新增`Vue.directive()`，第一個參數代表指令名稱(到時候使用就寫為`v-指令名稱`)，第二個參數則是要執行的方法。
+## 全域自定義指令
+現在要新增一個`v-focus`的全域指令，功用是開啟網頁時游標會自動停在`<input>`上。在`plugins/index.js`檔案中新增`Vue.directive()`，第一個參數代表指令名稱(到時候使用就寫為`v-指令名稱`)，第二個參數則是要執行的方法(使用`Javascript`)。
 ```
-// main.js
-// el代表執行此指令的元素，名稱可替換
+// index.js
+// el代表執行此指令的DOM元素，名稱可替換
 
 Vue.directive('focus',{
   inserted(el){
@@ -18,24 +19,18 @@ Vue.directive('focus',{
 
 <template>
     <div>
-        <input type="text" v-focus value="這個有加入v-focus">
-        <br><br>
-        <input type="text" value="這個沒加入">
+        <input type="text" v-focus value="這個有加入v-focus" />
+        <br />
+        <br />
+        <input type="text" value="這個沒加入" />
     </div>
 </template>
 ```
-如果要改成區域自定義指令的話，只需要將`main.js`的`Vue.directive()`搬移到要使用的組件裡面就可以了。變成區域指令只有定義的組件可以使用`v-focus`。
+
+## 區域自定義指令
+如果要改成區域自定義指令的話，只需要將`index.js`的`Vue.directive()`搬移到組件`<script>`裡面就可以了。變成區域指令只有定義的組件可以使用`v-focus`。
 ```
 // CustomDirective.vue
-
-<template>
-  <div>
-    <input type="text" v-focus value="這個有加入v-focus" />
-    <br />
-    <br />
-    <input type="text" value="這個沒加入" />
-  </div>
-</template>
 
 <script>
 export default {
@@ -49,3 +44,38 @@ export default {
 };
 </script>
 ```
+
+## 鉤子函數
+剛剛在範例中使用到`inserted`，這是`directive hook`之一，以下其他鉤子函數：
+- bind
+- inserted
+- update
+- componentUpdated
+- unbind
+
+### bind
+第一次綁定到元素會執行，可以透過`bind`給元素新增class name。現在只要輸入`v-addclass`就可以在element新增一個名為test的class。
+```
+// main.js
+
+Vue.directive('addclass',{
+  bind(el){
+    el.className = 'test';
+  }
+})
+```
+```
+// CustomDirective.vue
+
+<template>
+    <input type="text" v-addclass value="使用bind新增class" />
+</template>
+```
+### inserted
+當元素插入到DOM會觸發。就像上面的例子，當`<input>`載入HTML時就執行`v-focus`。
+
+### update
+### componentUpdated
+### unbind
+
+>>待更新...

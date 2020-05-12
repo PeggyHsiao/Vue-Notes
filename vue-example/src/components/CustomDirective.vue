@@ -4,8 +4,12 @@
     <br />
     <br />
     <input type="text" value="這個沒加入" />
+    <br />
+    <br />
+    <input type="text" v-addclass value="使用bind新增class" />
   </div>
 </template>
+
 
 <!--區域自定義指令
 <script>
@@ -17,5 +21,5 @@ export default {
       }
     }
   }
-};
+}
 </script>-->

@@ -1,14 +1,14 @@
 import Vue from 'vue';
 import App from './App.vue';
 import router from '@/router/index';
+import Plugin from '@/plugins/index';
 
 Vue.config.productionTip = false
 
-Vue.directive('focus',{
-  inserted(el){
-    el.focus();
-  }
-})
+// Plugins
+Vue.use(Plugin)
+Vue.myGlobalMethod(); 
+
 
 new Vue({
   render: h => h(App),
