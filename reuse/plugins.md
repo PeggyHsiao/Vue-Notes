@@ -2,7 +2,7 @@
 插件可以用來增加、補充Vue功能，像是官方提供的`vue-router`。也可以自行編寫插件使用。
 
 ## 編寫插件
-在`src`底下新增`plugins`資料夾，用來存放要編寫的`index,js`檔。  
+在`src`底下新增`plugins`資料夾，用來存放要編寫的`index.js`檔。  
 
 插件有分為以下四種：
 - 全域方法 global methods
@@ -29,7 +29,8 @@ export default{
     }
 }
 ```
-`install(Vue, options)`為固定的，其中options是用來
+`install(Vue, options)`為固定的，其中options是用來接`main.js`檔案裡`Vue.use(插件名稱, 參數)`的參數值。
+
 這時候會發現第1個全域方法和第4個實例方法很像，用**使用的位置**來區分，感覺實例方法比全域方法常用很多很多...  
 - 全域方法 global methods：給Vue對象使用，在`main.js`中輸入`Vue.方法名稱()`使用
 - 實例方法 prototype：在組件中輸入`this.$方法名稱()`使用

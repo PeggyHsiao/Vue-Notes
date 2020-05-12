@@ -6,7 +6,7 @@ import Plugin from '@/plugins/index';
 Vue.config.productionTip = false
 
 // Plugins
-Vue.use(Plugin)
+Vue.use(Plugin,"Options")
 Vue.myGlobalMethod(); 
 
 
