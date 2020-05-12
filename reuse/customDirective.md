@@ -12,7 +12,7 @@ Vue.directive('focus',{
   }
 })
 ```
-已經定義好指令了，現在這個專案中任何組件都可以使用。`CustomDirective.vue`新增兩個`<input>`其中一個加上`v-focus`，載入網頁後就可以看到游標停在上面的表格中。
+已經定義好指令了，`CustomDirective.vue`新增兩個`<input>`其中一個加上`v-focus`，載入網頁後就可以看到游標在上面的表格閃爍。因為是全域自定義指令，現在整個專案的組件都可以使用，之前的`Mixins.vue`也可以快樂的新增`<input v-focus>`獲得一樣的效果哦。
 ```
 // CustomDirective.vue
 
@@ -23,4 +23,29 @@ Vue.directive('focus',{
         <input type="text" value="這個沒加入">
     </div>
 </template>
+```
+如果要改成區域自定義指令的話，只需要將`main.js`的`Vue.directive()`搬移到要使用的組件裡面就可以了。變成區域指令只有定義的組件可以使用`v-focus`。
+```
+// CustomDirective.vue
+
+<template>
+  <div>
+    <input type="text" v-focus value="這個有加入v-focus" />
+    <br />
+    <br />
+    <input type="text" value="這個沒加入" />
+  </div>
+</template>
+
+<script>
+export default {
+  directives: {
+    focus : {
+      inserted: function(el) {
+        el.focus();
+      }
+    }
+  }
+};
+</script>
 ```

@@ -7,6 +7,7 @@
   </div>
 </template>
 
+<!--區域自定義指令
 <script>
 export default {
   directives: {
@@ -17,4 +18,4 @@ export default {
     }
   }
 };
-</script>
+</script>-->

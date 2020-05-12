@@ -6,11 +6,11 @@
 - Vue-cli架構介紹
 - 基本指令
 
-### 路由(Router)
+### 路由 Router
 - 安裝
 - 動態路由設定
 
-### 組件
+### 組件 Component
 
 ### 可複用性 & 組合
 - [自定義指令 (Custom Direactive)](https://github.com/PeggyHsiao/Vue-Note/blob/master/reuse/customDirective.md)
