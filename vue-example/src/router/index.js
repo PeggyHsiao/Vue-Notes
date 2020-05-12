@@ -1,15 +1,20 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import MixinsTest from '@/components/MixinsTest';
+import Mixins from '@/components/Mixins';
+import CustomDirective from '@/components/CustomDirective';
 
 Vue.use(Router)
 
-const routes=[
+const routes = [
     {
-        path:'/MixinsTest',
-        name:'mixinstest',
-        component: MixinsTest
+        path: '/Mixins',
+        name: 'mixins',
+        component: Mixins
+    }, {
+        path: '/CustomDirective',
+        name: 'customdirective',
+        component: CustomDirective
     }
 ];
 

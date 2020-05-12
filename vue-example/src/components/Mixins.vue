@@ -1,5 +1,8 @@
 <template>
-  <h1>this is MixinsTest.vue</h1>
+  <div>
+    <h1>this is Mixins.vue</h1>
+    <input type="text" v-focus>
+  </div>
 </template>
 
 <script>
