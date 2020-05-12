@@ -18,4 +18,4 @@
 - [插件 (plugins)](https://github.com/PeggyHsiao/Vue-Note/blob/master/reuse/plugins.md)
 - [自定義指令 (Custom Direactive)](https://github.com/PeggyHsiao/Vue-Note/blob/master/reuse/customDirective.md)
 - [混入 (mixins)](https://github.com/PeggyHsiao/Vue-Note/blob/master/reuse/mixins.md)
-- [實例方法](https://github.com/PeggyHsiao/Vue-Note/blob/master/reuse/prototype.md)
+- [實例方法 (prototype)](https://github.com/PeggyHsiao/Vue-Note/blob/master/reuse/prototype.md)
