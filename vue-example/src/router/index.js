@@ -4,6 +4,7 @@ import Router from 'vue-router';
 import Mixins from '@/components/Mixins';
 import CustomDirective from '@/components/CustomDirective';
 import Prototype from '@/components/Prototype';
+import Component from '@/components/Component';
 
 
 Vue.use(Router)
@@ -21,6 +22,10 @@ const routes = [
         path: '/Prototype',
         name: 'prototype',
         component: Prototype
+    },{
+        path: '/Component',
+        name: 'component',
+        component: Component
     }
 ];
 
