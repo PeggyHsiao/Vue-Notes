@@ -8,9 +8,16 @@
 ## npm (建立cli專案)
 在安裝vue-cli之前，電腦要先建立node.js環境。反正就是到[node.js官網](https://nodejs.org/en/)按下Download而已。
 
-安裝完成node環境之後，打開cmd或Terminal輸入以下指令。如果是mac OS的話，要在npm前面加上`sudo`。
+環境安裝完成後，打開cmd或Terminal輸入以下指令。如果是mac OS的話，要在npm前面加上`sudo`。
 ```
+// windows OS
+
 npm install -g @vue-cli
+```
+```
+// mac OS
+
+sudo npm install -g @vue-cli
 ```
 跑完後可以查看目前版本，其實主要目的是看有沒有安裝成功...XDD
 ```

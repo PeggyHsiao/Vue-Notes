@@ -14,7 +14,7 @@ import Router from 'vue-router';
 
 Vue.use(Router)
 ```
-接下來只要把`<router-view />`放入入口網頁，入口網頁就是掛載在h(createElement)的組件，下面範例為"App.vue"。等待[動態路由匹配]()完成就可以開開心心的使用路由切換網頁畫面了。
+接下來只要把`<router-view />`放入入口網頁，入口網頁就是掛載在h的組件(h也等於cteateElement)，下面範例為"App.vue"。等待[動態路由匹配](https://github.com/PeggyHsiao/Vue-Note/blob/master/router/settingRoute.md)完成就可以開開心心的使用路由切換網頁畫面了。
 ```
 // main.js
 

@@ -16,7 +16,7 @@
 
 ### 路由 Router
 - [安裝](https://github.com/PeggyHsiao/Vue-Note/blob/master/router/install.md)
-- 動態路由設定
+- [動態路由設定](https://github.com/PeggyHsiao/Vue-Note/blob/master/router/settingRoute.md)
 
 ### 狀態管理 Vuex
 
