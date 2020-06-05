@@ -6,6 +6,7 @@
 - [超簡單介紹webpack](https://github.com/PeggyHsiao/Vue-Note/blob/master/basic/webpack.md)
 - Vue-cli架構介紹
 - 基本指令
+    - [單向資料綁定]()
 - 生命週期
 
 ### 組件 Component

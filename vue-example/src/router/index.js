@@ -6,7 +6,7 @@ import CustomDirective from '@/components/CustomDirective';
 import Prototype from '@/components/Prototype';
 import Component from '@/components/Component';
 import RouterIndex from '@/components/RouterIndex';
-
+import MustacheBind from '@/components/MustacheBind';
 
 Vue.use(Router)
 
@@ -27,11 +27,14 @@ const routes = [
         path: '/Component',
         name: 'component',
         component: Component
-    },
-    {
+    },{
         path: '/RouterIndex',
         name: 'routerIndex',
         component: RouterIndex
+    },{
+        path: '/MustacheBind',
+        name: 'mustache-bind',
+        component: MustacheBind
     }
 ];
 
