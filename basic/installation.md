@@ -12,12 +12,12 @@
 ```
 // windows OS
 
-npm install -g @vue-cli
+npm install -g @vue/cli
 ```
 ```
 // mac OS
 
-sudo npm install -g @vue-cli
+sudo npm install -g @vue/cli
 ```
 跑完後可以查看目前版本，其實主要目的是看有沒有安裝成功...XDD
 ```
