@@ -6,7 +6,7 @@
 - Vue-cli架構介紹
 - 基本指令
     - [單向資料綁定](https://github.com/PeggyHsiao/Vue-Notes/blob/master/basic/mustache-bind.md)
-    - [單向資料綁定](https://github.com/PeggyHsiao/Vue-Notes/blob/master/basic/v-model.md)
+    - [雙向資料綁定](https://github.com/PeggyHsiao/Vue-Notes/blob/master/basic/v-model.md)
 - 生命週期
 
 ### 組件 Component
