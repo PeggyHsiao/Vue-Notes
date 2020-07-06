@@ -1,12 +1,12 @@
-# Vue.js學習筆記  
+# Vue.js 學習筆記  
 
 網路上很多技術文章對我來說有點艱澀，邊惡補邊整理關於Vue的筆記，並使用稍微口語化的方式解釋用法。這個筆記的用法以vue-cli為主。  
 ### 基礎
 - [安裝Vue.js](https://github.com/PeggyHsiao/Vue-Note/blob/master/basic/installation.md)
-- [超簡單介紹webpack](https://github.com/PeggyHsiao/Vue-Note/blob/master/basic/webpack.md)
 - Vue-cli架構介紹
 - 基本指令
     - [單向資料綁定](https://github.com/PeggyHsiao/Vue-Notes/blob/master/basic/mustache-bind.md)
+    - [單向資料綁定](https://github.com/PeggyHsiao/Vue-Notes/blob/master/basic/v-model.md)
 - 生命週期
 
 ### 組件 Component

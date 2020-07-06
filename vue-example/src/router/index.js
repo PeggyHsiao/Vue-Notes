@@ -7,6 +7,7 @@ import Prototype from '@/components/Prototype';
 import Component from '@/components/Component';
 import RouterIndex from '@/components/RouterIndex';
 import MustacheBind from '@/components/MustacheBind';
+import VModel from '@/components/VModel';
 
 Vue.use(Router)
 
@@ -35,6 +36,10 @@ const routes = [
         path: '/MustacheBind',
         name: 'mustache-bind',
         component: MustacheBind
+    },{
+        path: '/VModel',
+        name: 'v-model',
+        component: VModel
     }
 ];
 
