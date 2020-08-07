@@ -7,6 +7,9 @@
 - 基本指令
   - [單向資料綁定](https://github.com/PeggyHsiao/Vue-Notes/blob/master/basic/mustache-bind.md)
   - [雙向資料綁定](https://github.com/PeggyHsiao/Vue-Notes/blob/master/basic/v-model.md)
+  - [動態(迴圈)產生資料](https://github.com/PeggyHsiao/Vue-Notes/blob/master/basic/loop.md)
+  - [動態綁定CSS](https://github.com/PeggyHsiao/Vue-Notes/blob/master/basic/style.md)
+  - [是否顯示在畫面](https://github.com/PeggyHsiao/Vue-Notes/blob/master/basic/if-show.md)
 - 生命週期
 
 ### 組件 Component
