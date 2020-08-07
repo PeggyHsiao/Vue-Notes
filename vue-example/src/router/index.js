@@ -8,6 +8,7 @@ import Component from '@/components/Component';
 import RouterIndex from '@/components/RouterIndex';
 import MustacheBind from '@/components/MustacheBind';
 import VModel from '@/components/VModel';
+import Style from '@/components/Style';
 
 Vue.use(Router)
 
@@ -40,6 +41,10 @@ const routes = [
         path: '/VModel',
         name: 'v-model',
         component: VModel
+    },{
+        path: '/Style',
+        name: 'style',
+        component: Style
     }
 ];
 
