@@ -3,7 +3,7 @@
 - mustache：將資料渲染(render)進DOM
 - v-bind：綁定元素attribute
 
-### mustache
+## mustache
 `{{ }}`裡面放入要綁定的參數，這時候就會將參數值(Hello World)傳入`<h1>`。
 ```vue
 <!--MustacheBind.vue-->
@@ -22,7 +22,7 @@ export default {
 }
 </script>
 ```
-也可以做簡單的運算，在把剛剛的MustacheBind.vue修改一下。新增一個變數叫`count`值等於100，在大括弧裡面把`count`乘2，這時候會看到畫面上顯示200。
+也可以做簡單的運算。把剛剛的MustacheBind.vue修改一下。新增一個變數叫`count`值等於100，在大括弧裡面把`count`乘2，這時候會看到畫面上顯示200。
 ```vue
 <!--MustacheBind.vue-->
 
@@ -43,7 +43,7 @@ export default {
 </script>
 ```
 ![mustache](https://github.com/PeggyHsiao/Vue-Notes/blob/master/basic/mustache.JPG)
-### v-bind 
+## v-bind 
 用來綁定元素的屬性，可以簡寫為`:`。這時候滑鼠移到按鈕會顯示提示文字`remark`的值Click Me。
 ```vue
 <!--MustacheBind.vue-->
