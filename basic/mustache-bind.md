@@ -70,4 +70,31 @@ export default {
 </script>
 ```
 現在畫面呈現如下圖：
-![v-bind](https://github.com/PeggyHsiao/Vue-Notes/blob/master/basic/bind.JPG)
+![v-bind](https://github.com/PeggyHsiao/Vue-Notes/blob/master/basic/bind.JPG)  
+
+動態綁定讓資料不再是寫死的，大大提升網頁的靈活度！像下面這個例子，隨著資料的不同`img`的URL會跟著切換，讓網頁呈現不同的圖片。
+```vue
+<template>
+    <div>
+        <img :src="`./${img}.jpg`">
+    </div>
+</template>
+
+<script>
+export default {
+    data(){
+        return{
+            week: 3,
+            img: '',
+        }
+    },
+    created() {
+        if (this.week % 2 === 0) {
+        this.img = "even";
+        } else {
+        this.img = "odd";
+        }
+  },
+}
+</script>
+```
